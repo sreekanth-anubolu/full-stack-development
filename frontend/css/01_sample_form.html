@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Registration Form</title>
+    </head>
+    <body style="background-color: skyblue;text-align: center;font-size: 22px;color: White;">
+        <header style="text-align:center;background-color:green;color:white;padding:10px;">
+            <h1 style="color: white;font-size: 20px;font-family: cursive;"> India Cab Services </h1>
+        </header>
+        <div class="main">
+            <h1 style="color: white;font-size: 30px;font-family: cursive;">Simple Registration Form</h1>
+            <div style="top:500;bottom">
+                <form name="simple" method="post" action="/registration" style="background:rgba(0,0,0,0.6);padding: 24px;margin-top:0px;width: 28%;position: absolute;left:34%;border-radius: 15px;">
+                    <label> Name </label><br>
+                    <input type="text" id="req1" placeholder="Full name" style="width: 330px;height: 30px;border-radius: 7px;text-align: center;"><br>
+
+                    <label> Email </label><br>
+                    <input type="email" id="req3" placeholder="Email address" style="width: 330px;height: 30px;border-radius: 7px;text-align: center;"><br>
+
+                    <label> Password </label><br>
+                    <input type="password" id="req5" placeholder="Password" style="width: 330px;height: 30px;border-radius: 7px;text-align: center;"><br>
+
+                    <label> DOB </label><br>
+                    <input type="date" name="bday" style="width: 330px;height: 30px;border-radius: 7px;text-align: center;"><br>
+
+                    <label> Choose Gender </label><br>
+                    <input type="radio" name="gender"><label> Male </label>
+                    <input type="radio" name="gender"><label> Female </label>
+
+                    <br>
+                    <label> Select Country </label><br>
+                    <select id="selection" style="width: 330px;height: 30px;border-radius: 7px;text-align: center;">
+                        <option>Select</option>
+                        <option selected>India</option>
+                        <option>Pakistan</option>
+                        <option>Bangladesh</option>
+                        <option>Srilanka</option>
+                    </select>
+                    <br>
+
+                    <label> Choose Notification Means </label><br>
+                    <input type="checkbox" name="email"><label> Email </label>
+                    <input type="checkbox" name="sms"><label> SMS </label>
+                    <input type="checkbox" name="Postal"><label> Postal </label>
+                    <br><br>
+                    <input type="submit" value="Submit" style="color:white; background-color: blue;">
+                </form>
+            </div>
+        </div>
+
+        <footer style="text-align:center; font-size:18px; background-color: green;padding:10px;margin-top: 20px;position:fixed;width: 100%;
+    bottom: 10px;">
+            <p>
+              My Blog 2021
+            </p>
+        </footer>
+
+
+    </body>
+</html>

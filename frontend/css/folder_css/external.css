@@ -1,0 +1,24 @@
+body {
+    background-color: green;
+    color: white;
+}
+
+#div1 {
+    border: black solid 5px;
+    text-align: center;
+}
+
+#h1-tag {
+    font-family: cursive;
+    font-size: 35px;
+}
+
+.div-2 {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #65D6D4;
+    color: rgb(24, 36, 182);
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px;
+}
