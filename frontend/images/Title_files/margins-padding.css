@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+    font-size: 1rem;
+    font-family: cursive;
+}
+
+.border-css {
+    border: 3px black solid;
+    border-radius: 20px;
+}
+
+.margin-css {
+    margin-top: 10px;
+}
+
+.padding-css {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.todays-news {
+    background-color: beige;
+    color: darkgreen;
+    display: inline-block;
+    width:47%;
+}
+
+
+.yesterdays-news {
+    background-color: green;
+    color: white;
+    display: inline-block;
+    width:47%;
+}
+
+h3 {
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

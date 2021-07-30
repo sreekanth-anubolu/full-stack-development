@@ -1,3 +1,10 @@
+
+
+html {
+    font-size: 2rem;
+}
+
+
 body {
     background-color: green;
     color: white;
@@ -21,4 +28,30 @@ body {
     margin-left: 200px;
     margin-right: 200px;
     padding: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.border-css {
+    /*border: 5px red solid;*/
+    border-left: 10px black solid;
+    border-right: 10px red solid;
+    border-top: 8px blue dotted;
+    border-bottom: 8px white double;
+    border-bottom-width: 10px;
+}
+
+.radius {
+    border-radius: 30px;
+    border-top: 10px red dashed;
+}
+
+.hide {
+    display: none;
 }

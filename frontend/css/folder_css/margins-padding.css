@@ -1,0 +1,89 @@
+h1 {
+    text-align: center;
+    font-size: 1rem;
+    font-family: cursive;
+}
+
+.border-css {
+    border: 3px black solid;
+    border-radius: 20px;
+}
+
+.margin-css {
+    margin-top: 10px;
+}
+
+.padding-css {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.todays-news {
+    background-color: beige;
+    color: darkgreen;
+    display: inline-block;
+    width:47%;
+}
+
+
+.yesterdays-news {
+    background-color: green;
+    color: white;
+    display: inline-block;
+    width:47%;
+}
+
+h3 {
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+ul {
+    /*list-style-image: url("../icons/newspaper-solid.svg");*/
+    list-style: square;
+}
+
+
+.todays-news:hover {
+    background-color: white;
+    color: black;
+    width: 80%
+}
+
+.yesterdays-news:hover {
+    background-color: white;
+    color: black;
+
+}
+.links:visited {
+    color: red;
+}
+
+.links:hover {
+    color: green;
+}
+
+.links:active {
+    color: yellow;
+}
+
+.button {
+    margin-left: 47%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 0px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: green;
+    color: white;
+}
+
+.button:hover {
+    background-color: blue;
+    cursor: grab;
+}
+
