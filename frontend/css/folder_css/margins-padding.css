@@ -87,3 +87,26 @@ ul {
     cursor: grab;
 }
 
+.button_new {
+    float: right;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 0px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: black;
+    color: white;
+}
+
+.mainx {
+    margin-top: 1%;
+    position: fixed;
+}
+
+body {
+    background-image: url("../../images/bgimage.jpeg");
+    background-repeat: no-repeat; /* repeat, repeat-x, repeat-y
+}
+

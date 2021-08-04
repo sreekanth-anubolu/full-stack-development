@@ -1,0 +1,44 @@
+/* module-key = 'com.atlassian.auiplugin:split_aui.deprecated.component.dropdown1', location = 'aui.deprecated.component.dropdown1.css' */
+.aui-dd-parent{position:relative}.aui-dd-parent a.aui-dd-trigger,.aui-dd-parent span a.aui-dd-trigger{background:transparent url("data:image/gif;base64,R0lGODlhQQAaAJEDAP///zc3N21tbf///yH5BAEAAAMALAAAAABBABoAAALznA+ny+0PI5hs2psMxmjb5VEKh0BJeA3o13lNNprqetJxVWo5/M6rj7qBNLDiiZhS+SoUHi6opLGApSTy+Ki5lLNclyfSkTjOYZmqS3PPVRtb3Mvi5FKuAzt8We29+jsap1f2c7XRsgV1F7HI2Ngo4Bgp6ShQyVCJmQlpoKl50Jm5AGqp4PkJATkaqopZOtqwWYo6wGpZG0sLe8q5i3tJWwvMKvsLvGu82cnbKmo7q7p8GxsaTcrZ6isqrJxrzHvdDX5q6pkta04dPv3tkBpsPq77kA1fDV2fi96eHq572/9L3z560K69MggKoal2kxo6HFAAADs=") no-repeat -13px 0;border:none;color:#000;display:block;height:13px;padding:0;text-indent:-9999px;width:13px}.aui-dd-parent a.aui-dd-trigger.active,.aui-dd-parent a.aui-dd-trigger:active,.aui-dd-parent a.aui-dd-trigger:focus,.aui-dd-parent a.aui-dd-trigger:hover{background-position:-26px 0;border:none;color:#000}.aui-dd-parent span a.aui-dd-trigger{position:absolute;right:5px;top:8px}.aui-dd-parent a.aui-dd-trigger.unstyled,.aui-dd-parent span a.aui-dd-trigger.unstyled{background:none;border:none;color:inherit;display:block;height:auto;text-indent:0;width:auto}.aui-dd-parent a.aui-dd-trigger-unstyled.active,.aui-dd-parent a.aui-dd-trigger-unstyled:active,.aui-dd-parent a.aui-dd-trigger-unstyled:focus,.aui-dd-parent a.aui-dd-trigger-unstyled:hover{background:none;border:none;color:inherit}.aui-dd-parent span a.aui-dd-trigger-unstyled{position:absolute;right:auto;top:auto}.aui-dropdown{list-style-type:none}.aui-dd-parent .aui-dropdown,.aui-dd-parent .aui-shadow-parent,.aui-dropdown{box-shadow:0 4px 8px -2px rgba(9,30,66,.25),0 0 1px rgba(9,30,66,.31);background:#fff;border:0 solid #dfe1e6;border-radius:3px;color:#344563;margin-top:-1px;padding:3px 0;position:absolute;z-index:2703}@media screen and (-ms-high-contrast:active),screen and (-ms-high-contrast:none){.aui-dd-parent .aui-dropdown,.aui-dd-parent .aui-shadow-parent,.aui-dropdown{box-shadow:0 4px 8px -2px rgba(9,30,66,.25),0 0 1px rgba(9,30,66,.13),1px 0 1px rgba(9,30,66,.13),-1px 0 1px rgba(9,30,66,.13),0 -1px 1px rgba(9,30,66,.13)}}.aui-dd-parent .aui-dropdown-left{left:0}.aui-dd-parent .aui-dropdown-right{right:0}.aui-dd-parent .aui-shadow{right:5px}.aui-dd-parent .aui-dropdown li.dropdown-item,.aui-dropdown li.dropdown-item{display:block;float:none;margin:0;position:static}body:not(.aui-legacy-focus) .aui-dd-parent .aui-dropdown a.item-link:focus,body:not(.aui-legacy-focus) .aui-dropdown a.item-link:focus{outline:none;box-shadow:0 0 0 2px #4c9aff}.aui-dd-parent .aui-dropdown a.item-link,.aui-dropdown a.item-link{display:inline-block;float:none;height:auto;padding:4px 14px 3px 12px;position:static;text-decoration:none;text-indent:0;white-space:nowrap;width:auto}.aui-dd-parent .aui-dropdown a.item-link,.aui-dd-parent .aui-dropdown a.item-link:link,.aui-dd-parent .aui-dropdown a.item-link:visited,.aui-dropdown a.item-link,.aui-dropdown a.item-link:link,.aui-dropdown a.item-link:visited{background-color:transparent;color:#344563;text-decoration:none;cursor:pointer}.aui-dd-parent .aui-dropdown a.item-link:focus,.aui-dd-parent .aui-dropdown a.item-link:hover,.aui-dd-parent .aui-dropdown li.dropdown-item.active a.item-link,.aui-dropdown a.item-link:focus,.aui-dropdown a.item-link:hover{background-color:#ebecf0;color:#344563}.aui-dd-parent .aui-dropdown a.item-link:active,.aui-dropdown a.item-link:active{background-color:#deebff;color:#0052cc}.aui-dd-parent .aui-dropdown li.dropdown-item a.item-link span.icon{display:inline-block}div.shim{position:absolute}
+/* module-key = 'com.atlassian.integration.jira.jira-integration-plugin:jira-create-issue-form', location = '/jira-create-issue-form/jira-create-issue-form.less' */
+form.jira-create-form .aui-icon-required{position:absolute}form.jira-create-form .select2-container .select2-choice{padding:4px 10px 0 5px}form.jira-create-form .select2-chosen .select-option,form.jira-create-form .select2-results .select-option{vertical-align:middle}form.jira-create-form .project-select .select2-chosen{padding-left:1px}form.jira-create-form .select2-container.select2-container-disabled .select2-choice{background-color:#f5f5f5;background-image:none;color:#999;cursor:not-allowed;border:1px solid #ccc}form.jira-create-form .aui-icon.aui-icon-wait{position:absolute;margin:7px 0 0 5px}form.jira-create-form .select-option-image{height:16px;width:16px;vertical-align:middle;margin-right:5px}form.jira-create-form input.text[data-aui-notification-field]:not(.aui-form-notification-field-no-icon),form.jira-create-form input.password[data-aui-notification-field]:not(.aui-form-notification-field-no-icon){padding-right:5px}form.jira-create-form input.text[data-aui-notification-field]:not(.aui-form-notification-field-no-icon)[data-aui-notification-error],form.jira-create-form input.password[data-aui-notification-field]:not(.aui-form-notification-field-no-icon)[data-aui-notification-error]{padding-right:25px}form.jira-create-form input.text[data-aui-notification-field]:not(.aui-form-notification-field-no-icon).long-field+.aui-icon-notification,form.jira-create-form input.password[data-aui-notification-field]:not(.aui-form-notification-field-no-icon).long-field+.aui-icon-notification{position:absolute;right:5px;top:10px}
+/* module-key = 'com.atlassian.bitbucket.server.bitbucket-frontend:split_extension-jira-pull-request-comment-extension-comment-extension-js', location = 'extension-jira-pull-request-comment-extension-comment-extension-js.bundle.css' */
+.jira-issues-list {
+  margin-top: 8px;
+}
+.jira-issues-list ul {
+  list-style: none;
+  padding: 0;
+}
+.jira-issues-list ul + .jira-auth-wrapper {
+  margin-top: 8px;
+}
+.jira-issues-list .issue-item {
+  padding: 8px 0;
+}
+.jira-issues-list .issue-item:first-child {
+  padding-top: 0;
+}
+.jira-issues-list .issue-item:last-child {
+  padding-bottom: 0;
+}
+.jira-issues-list .issue-type-icon {
+  margin-right: 8px;
+  vertical-align: text-bottom;
+}
+.jira-issues-list .issue-link {
+  margin-right: 8px;
+}
+.jira-issues-list .issue-status-done {
+  text-decoration: line-through;
+}
+.jira-issues-list .issue-summary {
+  margin-right: 8px;
+}
+.jira-issues-list .jira-auth-button {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+/*# sourceMappingURL=/download/contextbatch/css/bitbucket.ui.pullrequest.comment.action,bitbucket.ui.pullrequest.comment.extra,-_super,-bitbucket.page.pullRequest.detail,-bitbucket.ui.pullrequest.overview.summary,-atl.general,-bitbucket.layout.repository,-bitbucket.layout.base,-bitbucket.ui.pullrequest.action/batch.css.map?_statichash=b77adcca98bde9a6262f6d800a04d5b6-CDN%2F1126798137%2F6433dff%2F382%2F0bddecbdf9e36e72117bb5a5d99cfc72&awesome.graphs.adg3=true&awesome.graphs.isLoggedIn=true&feature.smart.mirrors.enabled=true&hasConnectAddons=true&isJiraLinked=true */

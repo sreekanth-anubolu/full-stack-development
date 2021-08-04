@@ -1,0 +1,14 @@
+/* module-key = 'com.atlassian.bitbucket.server.bitbucket-frontend:split_extension-git-rebase-pull-request-action-item-extension-action-item-extension-js', location = 'extension-git-rebase-pull-request-action-item-extension-action-item-extension-js.bundle.css' */
+
+.rebase-modal .branch-lozenge {
+  margin: 0 4px;
+}
+.rebase-flag-body {
+  padding-top: 8px;
+}
+.rebase-flag-body .rebase-veto-detail {
+  white-space: pre-wrap;
+}
+
+
+/*# sourceMappingURL=/download/contextbatch/css/bitbucket.ui.pullrequest.action,-_super,-bitbucket.page.pullRequest.detail,-bitbucket.layout.base,-atl.general/batch.css.map?_statichash=d41d8cd98f00b204e9800998ecf8427e-CDN%2F1126798137%2F6433dff%2F382%2F07102ac3bb874763fbe1324749d44cfd&awesome.graphs.adg3=true&awesome.graphs.isLoggedIn=true&hasConnectAddons=true */

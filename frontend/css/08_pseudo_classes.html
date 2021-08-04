@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style type="text/css">
+        .list {
+            border: red 1px solid;
+            display: inline-block;
+            width: 200px;
+            color: white;
+            background-color: green;
+        }
+
+        .list-2 {
+            border: red 1px solid;
+            display: inline-block;
+            width: 200px;
+            color: white;
+            background-color: gray;
+        }
+
+        .list-2 li:first-child {
+            color:black;
+        }
+
+        .list-2 li:last-child {
+            color:red;
+        }
+
+        .list-2 li:nth-child(3) {
+            color:blue;
+        }
+
+
+        .list-3 {
+            border: red 1px solid;
+            display: inline-block;
+            width: 200px;
+            color: black;
+            background-color: white;
+        }
+
+        .list-3 li:nth-child(odd) {
+            color: green;
+            font-style: italic;
+        }
+
+        .list-3 li:nth-child(even) {
+            color: red;
+            font-weight: bold;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="col-md-2">
+        <ol class="list-group">
+            <li class="list-group-item"> Bangalore </li>
+            <li class="list-group-item"> Bombay</li>
+            <li class="list-group-item"> Delhi </li>
+            <li class="list-group-item"> Chennai </li>
+            <li class="list-group-item"> Nagpur </li>
+        </ol>
+
+    </div>
+
+    <div class="list-2">
+        <ol>
+            <li> Bangalore </li>
+            <li> Bombay</li>
+            <li> Delhi </li>
+            <li> Chennai </li>
+            <li> Nagpur </li>
+        </ol>
+
+    </div>
+
+    <div class="list-3">
+        <ol>
+            <li> Bangalore </li>
+            <li> Bombay</li>
+            <li> Delhi </li>
+            <li> Chennai </li>
+            <li> Nagpur </li>
+            <li> Hyderbad </li>
+            <li> Warangal  </li>
+            <li> Thirupathi </li>
+            <li> Vizag </li>
+        </ol>
+
+    </div>
+
+    <button class="btn btn-success"> TEST BUTTON </button>
+
+</body>
+</html>
