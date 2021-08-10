@@ -73,7 +73,7 @@ ALTER TABLE Blog DROP COLUMN uuid;
 -- MODIFY/ALTER COLUMN DATATYPE 
 ALTER TABLE Blog ALTER COLUMN approved_by TYPE varchar(200);
 
-insert into blog(category,blog_content, created_by, approved_by) values('Sports', 'Content Sports', 3, 'BOSS');
+insert into blog(category,blog_content, created_by, approved_by) values('Sports', 'Content Sports Latest', 3, 'BOSS');
 insert into blog(category,blog_content, created_by, approved_by) values('Beauty', 'Content Beauty', 2, 'BOSS');
 insert into blog(category,blog_content, created_by, approved_by) values('Advertismnet', 'Content Addvertismnet', 3, 'BOSS');
 insert into blog(category,blog_content, created_by, approved_by) values('Entertainment', 'Content Entertainment', 1, 'BOSS');
@@ -121,5 +121,88 @@ SELECT category, created_by FROM blog order by created_by DESC;
 SELECT category FROM blog order by category;
 
 -- LIMIT THE NUMBER OF RECORDS
-SELECT * FROM blog order by created_ts DESC LIMIT 1;
+SELECT * FROM blog order by created_ts DESC LIMIT 2;
+
+
+SELECT * FROM blog order by category;
+
+-- Group By Clause 
+-- Grouping the records into summary rows and return one record for each group.
+-- Group by is always be used with Aggrgator functions, Min, Max, Count, Sum, Avg
+
+SELECT category, count(*) FROM blog GROUP BY category;
+
+
+-- Aliasing - Use 'AS' to give an alternative name.
+SELECT category, count(*) AS articles_count FROM blog where category in ('Entertainment', 'Sports') GROUP BY category;
+
+
+select * from student;
+
+select standard, count(standard) as students_count_per_class from student GROUP BY standard;
+
+
+create table StudentAttend (
+	student_id int, 
+	attendance boolean
+)
+
+insert into StudentAttend values(1, true);
+insert into StudentAttend values(1, false);
+insert into StudentAttend values(1, true);
+insert into StudentAttend values(2, false);
+insert into StudentAttend values(3, true);
+insert into StudentAttend values(1, false);
+insert into StudentAttend values(2, true);
+insert into StudentAttend values(3, false);
+insert into StudentAttend values(2, true);
+
+select * from StudentAttend;
+select student_id, count(*) as presence from StudentAttend WHERE attendance=true 
+GROUP BY student_id order by presence limit 1;
+
+create table StudentScore (
+	student_id int, 
+	score int
+)
+
+insert into StudentScore values(2, 99);
+insert into StudentScore values(1, 50);
+insert into StudentScore values(3, 100);
+insert into StudentScore values(4, 70);
+
+
+select Max(score) from StudentScore group by student_id orde;
+
+select student_id, Min(score) as min_score from StudentScore group by student_id order by min_score limit 1;
+select student_id, Max(score) as max_score from StudentScore group by student_id order by max_score DESC limit 1;
+
+-- Table with student_id, subject_id, score
+-- Get Sum/Avg of all subjects of each student 
+-- Get top/low scorer
+-- Get the list of students who scored between 70-90 in Mathematics
+
+--- select COLUMNS from TABLE where CONDITION group by COLOUMN order by COLUMN...
+
+-- Having -- Just like where condition, since where doest work on aggr functions, so when ever we want to filter
+-- Data based on aggr functions then we will use Having.
+
+SELECT * from blog;
+SELECT category, count(*) FROM blog GROUP BY category HAVING count(*) > 6;
+
+
+select * from StudentScore
+SELECT student_id, max(score) FROM StudentScore GROUP BY student_id HAVING max(score) > 70;
+
+
+SELECT * from studentscore where score between 70 and 100;
+
+SELECT * from blog where date(created_ts) between date('2021-08-07') and date('2021-08-10');
+
+
+select distinct date(created_ts) from blog;
+
+select date(created_ts) from blog limit 1;
+
+
 
