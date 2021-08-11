@@ -204,5 +204,16 @@ select distinct date(created_ts) from blog;
 
 select date(created_ts) from blog limit 1;
 
+-- LIKE OPERATOR - DOES SUBSTRING MATCH
+select * from student;
+insert into student(id, name) values(30, 'Roshni');
+select * from student where name='Raj';
+select * from student where name='R';
+select * from student where name like 'Rosh%';
+select * from student where name like '%n';
+select * from student where name like '%o%';
+
+
+
 
 
