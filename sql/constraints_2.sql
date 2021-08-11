@@ -7,6 +7,9 @@ insert into Department(dept_name) values('Data Entry');
 select * from Department;
 
 drop table Employee;
+
+-- FORIGEN KEY is placed with REFERENCES keyword
+-- REFERENCES TABL_NAME(COLUMN_NAME)
 CREATE TABLE Employee (
 	id  		serial PRIMARY KEY,
 	name 		varchar(30) NOT NULL,
