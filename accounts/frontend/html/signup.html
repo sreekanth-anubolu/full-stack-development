@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> SignUp View </title>
+    </head>
+
+    <body>
+        <div>
+            Signup View
+        </div>
+
+        <div>
+            <form action="/accounts/signup/" method="POST">
+                {% csrf_token %}
+
+                {{form.as_p}}
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+    </body>
+
+</html>

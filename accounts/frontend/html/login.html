@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Login View </title>
+    </head>
+
+    <body>
+        <div>
+            Login View
+        </div>
+
+        <div>
+            <form action="/accounts/login/" method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button type="submit"> Login </button>
+                {{form.errors}}
+            </form>
+
+
+        </div>
+    </body>
+
+</html>
