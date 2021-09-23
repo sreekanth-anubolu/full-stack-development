@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title> Profile View </title>
+
+        <style>
+                .container {
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .login-widget {
+                    margin: 0;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 45em;
+                    width: 40%;
+                    border-radius: 2%;
+                    background: #ffff;
+                }
+        </style>
+    </head>
+
+    <body style="background: #1C8EF9;">
+        <div class="container text-center">
+            <div class="row justify-content-center align-items-center login-widget">
+                <h2> Edit {{ request.user }} Profile</h2>    
+                <form action="/accounts/profile/" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input type="hidden" name="user" value={{request.user.id}} required id="id_user">
+                    {% for field in form %}
+                        <div width="50%">
+                            <div class="form-group">
+                                <label> {{ field.label}}: </label>
+                                <p>{{ field }}</p>
+                            </div>
+                            
+
+                            {% for error in field.errors %}
+                                <small style="color:red">{{ error }}</small>
+                            {% endfor %}
+                        </div>
+                    {% endfor %}
+                    <p> <a href="/">Back to Home</a></p>
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
